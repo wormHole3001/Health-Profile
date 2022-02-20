@@ -19,12 +19,23 @@ namespace Health_Profile
 
         private void ResultsSummary_Load(object sender, EventArgs e)
         {
+            /* Formula to calculate BMI based on inches and pounds
+             * Formula: weight (lb) / [height (in)]2 x 703
+            */
+            double BMICalculated = (double.Parse(Form1.SetWeight) / Math.Pow((double.Parse(Form1.SetHeight)),2)) * 703;
+            int MaxHeartRate = 220 - int.Parse(Form1.SetHeight); // Forumla 220 - Age
+            int TargetHeartRateMin = (int)(MaxHeartRate * .50); // Formula MaxHeartRate * .50
+            int TargetHeartRateMax = (int)(MaxHeartRate * .85); // Formula MaxHeartRate * .85
+
             FirstName.Text = Form1.SetFirstName;
             LastName.Text = Form1.SetLastName;
             DateOfBirth.Text = Form1.SetDateOfBirth;
             Weight.Text = Form1.SetWeight;
             Gender.Text = Form1.SetGender; 
             Height.Text = Form1.SetHeight;
+            BMI.Text = BMICalculated.ToString();
+            MaxHR.Text = MaxHeartRate.ToString() + " bpm";
+            TargetHR.Text = TargetHeartRateMin.ToString() + "-" + TargetHeartRateMax.ToString() + " bpm";
         }
     }
 }

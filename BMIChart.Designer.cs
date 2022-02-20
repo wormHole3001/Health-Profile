@@ -5082,6 +5082,7 @@
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(1362, 45);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(148, 32);
             this.textBox1.TabIndex = 451;
             this.textBox1.Text = "Underweight";
@@ -5092,6 +5093,7 @@
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox2.Location = new System.Drawing.Point(1362, 83);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(148, 32);
             this.textBox2.TabIndex = 452;
             this.textBox2.Text = "Healthy";
@@ -5102,6 +5104,7 @@
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox3.Location = new System.Drawing.Point(1362, 121);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(148, 32);
             this.textBox3.TabIndex = 453;
             this.textBox3.Text = "Overweight";
@@ -5112,6 +5115,7 @@
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox4.Location = new System.Drawing.Point(1362, 159);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(148, 32);
             this.textBox4.TabIndex = 454;
             this.textBox4.Text = "Obese";
@@ -5122,6 +5126,7 @@
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox5.Location = new System.Drawing.Point(1362, 197);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(148, 32);
             this.textBox5.TabIndex = 455;
             this.textBox5.Text = "Extremely Obese";

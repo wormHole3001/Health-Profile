@@ -110,5 +110,11 @@ namespace Health_Profile
                 errorProvider1.SetError(HeightComboBox, String.Empty);  
             }
         }
+
+        private void BMIChartButton_Click(object sender, EventArgs e)
+        {
+            BMIChart bmiChart = new BMIChart();
+            bmiChart.Show();    
+        }
     }
 }

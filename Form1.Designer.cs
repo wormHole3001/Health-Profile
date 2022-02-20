@@ -106,6 +106,7 @@
             this.BMIChartButton.Text = "BMI Chart";
             this.BMIChartButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BMIChartButton.UseVisualStyleBackColor = false;
+            this.BMIChartButton.Click += new System.EventHandler(this.BMIChartButton_Click);
             // 
             // HeightWeightGroupBox
             // 
@@ -200,6 +201,7 @@
             // 
             // DateOfBirth
             // 
+            this.DateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DateOfBirth.Location = new System.Drawing.Point(6, 34);
             this.DateOfBirth.MaxDate = new System.DateTime(2022, 2, 19, 0, 0, 0, 0);
             this.DateOfBirth.Name = "DateOfBirth";

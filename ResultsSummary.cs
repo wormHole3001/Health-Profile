@@ -22,8 +22,11 @@ namespace Health_Profile
             /* Formula to calculate BMI based on inches and pounds
              * Formula: weight (lb) / [height (in)]2 x 703
             */
+            String[] Year = Form1.SetDateOfBirth.Split('/');
+            string DateYear = Year[2];
+            string currentYear = DateTime.Now.Year.ToString();
             double BMICalculated = (double.Parse(Form1.SetWeight) / Math.Pow((double.Parse(Form1.SetHeight)),2)) * 703;
-            int MaxHeartRate = 220 - int.Parse(Form1.SetHeight); // Forumla 220 - Age
+            int MaxHeartRate = 220 - (int.Parse(currentYear) - int.Parse(DateYear)); // Forumla 220 - Age
             int TargetHeartRateMin = (int)(MaxHeartRate * .50); // Formula MaxHeartRate * .50
             int TargetHeartRateMax = (int)(MaxHeartRate * .85); // Formula MaxHeartRate * .85
 
